@@ -17,7 +17,7 @@ struct GeometryReaderView: View {
                         RoundedRectangle(cornerRadius: 20)
                             .rotation3DEffect(Angle(degrees: getPercentage(geo: geo) * 40), axis:( (x: 0, y: 1, z: 0)))
                     }
-                    .frame(width: 300, height: 250)
+                    .frame(width: 300, height: 400)
                     .padding()
                     
                 }
