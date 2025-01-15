@@ -11,7 +11,11 @@ import SwiftUI
 struct IntermediateBootcampApp: App {
     var body: some Scene {
         WindowGroup {
+<<<<<<< HEAD
             TimerBootcamp()
+=======
+            PushNotificationsView()
+>>>>>>> feature/push-notifications
         }
     }
 }
