@@ -54,7 +54,7 @@ struct TimerBootcamp: View {
             
 //            Text(timeRemaining)
 //                .fontDesign(.monospaced)
-//                .fontWeight(.semibold)
+//                .fontWeight(.semibold)    
 //                .font(.system(size: 100))
 //                .foregroundStyle(.white)
 //                .lineLimit(1)
