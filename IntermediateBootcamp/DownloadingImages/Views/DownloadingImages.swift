@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct DownloadingImages: View {
+    
+    @StateObject var vm = DownloadingImagesViewModel()
+    
     var body: some View {
         NavigationStack {
             List {
-                Text("Hello")
+                ForEach(vm.dataArray) { model in
+                    HStack {
+                        Circle()
+                            .frame(width: 75, height: 75)
+                        VStack(alignment: .leading) {
+                            Text(model.title)
+                                .font(.headline)
+                            Text(model.url)
+                                .foregroundStyle(.gray)
+                                .italic()
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                }
             }
             . listStyle(.inset)
             .listItemTint(.cyan)
