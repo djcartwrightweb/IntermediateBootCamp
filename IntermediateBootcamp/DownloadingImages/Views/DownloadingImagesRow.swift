@@ -13,7 +13,7 @@ struct DownloadingImagesRow: View {
     
     var body: some View {
         HStack {
-            Circle()
+            DownloadingImageView(urlString: model.url, imageKey: "\(model.id)")
                 .frame(width: 75, height: 75)
             VStack(alignment: .leading) {
                 Text(model.title)
@@ -28,6 +28,6 @@ struct DownloadingImagesRow: View {
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    DownloadingImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "my Title", url: "here", thumbnailUrl: "code"))
+    DownloadingImagesRow(model: PhotoModel(albumId: 1, id: 1, title: "my Title", url: "https://picsum.photos/200", thumbnailUrl: "https://picsum.photos/200"))
         .padding()
 }
